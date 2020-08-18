@@ -1,2 +1,4 @@
 # Employee-Dashborad
-dashboard for employee using html and javascript
+
+Dashboard for employee using html and javascript and google local storage
+
