@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="respond.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <div class="sidenav">
+    <h2>DASHBOARD</h2>  
+    <a href="overview.html">OVERVIEW</a>
+    <a href="index.html">EMPLOYEE</a>
+    <a href="department.html">DEPARTMENT</a>
+    <a href="project.html">PROJECT</a>
+  </div>
+<!-- -----------------------SIDE NAV-------------------- -->
+
+<button onclick="myfunction1()" id="popup"><i class="fa fa-plus-circle" aria-hidden="true"></i>add project</button>
+
+<table cellspacing="4" cellpadding="4" border ='1' id="list">
+    
+  <tr>
+    <th>name</th>
+    <th>description</th>
+    <TH>maximum resources</TH>
+    <th>edit</th>
+    <th>delete</th>
+   
+  </tr>
+    
+  <tbody id="response"></tbody>
+  </table>
+  
+
+  <div id="form_div">
+    <form id="form" value="0" >
+
+      <div>
+        <input type="text" size="50" name="Name"  id="name" placeholder="PROJECT" title="enter min 10 or max 30 characters" required>
+      </div>
+
+      <div>
+        
+        <input type="text" size="50" name="Name"  id="description" placeholder="DESCRIPTION" title="enter min 10 or max 30 characters" required>
+
+      </div>
+      
+      <div>
+        
+        <input type="text" size="50" name="Name"  id="project" placeholder="MAXIMUM RESOURCES" title="enter min 10 or max 30 characters" required>
+
+      </div>
+
+      <div id="button"><br>
+          <button  type="submit" id="sub" style="top: 82%;">Add</button>
+          <button type="submit" id="edit" class="hide"onclick="myfunction3()" style="top: 83%;" >Edit</button>
+          
+      </div>
+      
+    </form>
+
+    <!-- delete popup -->
+
+		<div class="del1" id="delpop">
+				
+		</div>
+
+  </div>
+  
+
+   <script src="proj.js"></script> 
+
+
+
+</body>
+</html> 

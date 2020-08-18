@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="respond.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+	</head>
+	
+	<body  >
+				
+		<div class="sidenav" id="myTopnav" >
+		  <h2>DASHBOARD</h2>  
+		  <a href="overview.html">OVERVIEW</a>
+		  <a href="index.html" >EMPLOYEE</a>
+		  <a href="department.html">DEPARTMENT</a>
+		  <a href="project.html">PROJECT</a>
+		</div>
+		
+		
+		<div id="form_div" >
+			<form id="form" value="0" >
+				<div>
+				
+					<input type="text" size="50" name="Name"  id="name" placeholder="Enter your name" title="enter min 10 or max 30 characters" required>
+				</div>
+				<div>
+					
+					<input type="date" size="50" name="dob" id="dob" value="" placeholder="Enter your dob"title="dd/mm/yyyy" required >
+				</div>
+				<div>
+					
+					<input type="text" size="50" name="experience" id="experience" placeholder="Enter your year of experience"   required>
+				</div>
+				
+				
+				<div>
+				
+					<input type="text" size="50" name="address" id="address" placeholder="Enter your address"  required>
+				</div>
+				
+				<div>
+					<input type="text" size="50" name="phone" id="phone" placeholder="Enter your phone no"  required>
+				</div> 
+
+				<div>
+
+					
+					<select id="department" name="department" class="output" required   >
+						<option value="">-- Select --</option>
+						
+					</select>
+					
+
+				</div>
+				<div>
+
+				
+					<select id="project" name="project" >
+						<option value="">-- Select --</option>
+						
+					</select>
+
+				</div>
+			
+				
+				<div id="button"><br>
+						<button  type="submit" id="sub">Add</button>
+						<button type="submit" id="edit" class="hide" >Edit</button>
+						
+				</div>
+				
+			</form>
+
+			<!-- delete popup -->
+
+		<div class="del1" id="delpop">
+				
+		</div>
+ 
+		</div>
+		<button onclick="myfunction1();loadDept();loadproj()" id="popup"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add employee</button>
+		<table   cellspacing="8" cellpadding="8" border ='1' id="list">
+			
+				<tr>
+					<th>name</th>
+					<th>dob</th>
+					<th>experiene</th>
+					<th>address</th>										
+					<th>phone no</th>
+					<th>department</th>
+					<th>project</th>
+					<th>edit</th>
+					<th>delete</th>
+				</tr>
+			
+			<tbody id="response">
+			</tbody>
+		</table>
+		
+		<script type="text/javascript" src="app.js"></script>
+		
+
+	</body>
+								
+</html>
+
+
+
+

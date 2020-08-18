@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="respond.css">
+
+</style>
+
+</head>
+
+<body onload="overview()">
+  <div class="sidenav">
+    <h2>DASHBOARD</h2>  
+    <a id="myLinks" href="overview.html">OVERVIEW</a>
+    <a id="myLinks" href="index.html" >EMPLOYEE</a>
+    <a id="myLinks" href="department.html">DEPARTMENT</a>
+    <a id="myLinks" href="project.html">PROJECT</a>
+    </a>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p id='employee-count'><i class="fa fa-user"></i></p>
+      <p>Employees</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p id='project-count'><i class="fa fa-tasks"></i></p>
+      <p>Projects</p>
+    </div>
+  </div>
+  
+  <div class="column" >
+    <div class="card">
+      <p id='department-count'><i class="fa fa-database"></i></p>
+      <p>Departments</p>
+    </div>
+  </div>
+
+
+  <div class="column" >
+    <div class="card cardproject">
+      <p id='project-assign'><i class="fa fa-database"></i></p>
+      <p>Projects Assigned</p>
+    </div>
+  </div>
+
+  
+  
+</body>
+<script type="text/javascript" src="overview.js"></script>
+
+</html>
