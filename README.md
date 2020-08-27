@@ -22,7 +22,7 @@ Dashboard for employee using html and javascript and Google local storage
 **To use**
 1.  Fork or clone the Repository
 
-2.  Add Projects in project pages0
+2.  Add Projects in project pages
 
 3.  Add Departments in department page 
  
